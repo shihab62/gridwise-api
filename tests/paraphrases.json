@@ -1,0 +1,420 @@
+[
+  {
+    "id": "P01",
+    "note": "PV production will drop to about 20% between 13:00 and 15:00",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "solar_reduction",
+      "hours": [13, 14],
+      "factor": 0.2
+    }
+  },
+  {
+    "id": "P02",
+    "note": "Expect an 80% reduction in rooftop solar during the 1-3 PM maintenance window",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "solar_reduction",
+      "hours": [13, 14],
+      "factor": 0.2
+    }
+  },
+  {
+    "id": "P03",
+    "note": "Panel washing from one until three will leave roughly one-fifth of normal solar output",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "solar_reduction",
+      "hours": [13, 14],
+      "factor": 0.2
+    }
+  },
+  {
+    "id": "P04",
+    "note": "Solar output is expected to drop by 50% from 11:00 to 14:00 due to passing overcast clouds",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "solar_reduction",
+      "hours": [11, 12, 13],
+      "factor": 0.5
+    }
+  },
+  {
+    "id": "P05",
+    "note": "Dust storm: solar loses a quarter of output from noon until three PM",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "solar_reduction",
+      "hours": [12, 13, 14],
+      "factor": 0.75
+    }
+  },
+  {
+    "id": "P06",
+    "note": "Solar generation will be curtailed to 10% between 10:00 and 12:00 for electrical safety checks",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "solar_reduction",
+      "hours": [10, 11],
+      "factor": 0.1
+    }
+  },
+  {
+    "id": "P07",
+    "note": "A 90 percent curtailment on rooftop PV from 14:00 to 16:00",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "solar_reduction",
+      "hours": [14, 15],
+      "factor": 0.1
+    }
+  },
+  {
+    "id": "P08",
+    "note": "Solar array output will be halved from 12:00 until 15:00",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "solar_reduction",
+      "hours": [12, 13, 14],
+      "factor": 0.5
+    }
+  },
+  {
+    "id": "P09",
+    "note": "Expect rooftop solar generation to be at 30% from 1 PM till 4 PM",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "solar_reduction",
+      "hours": [13, 14, 15],
+      "factor": 0.3
+    }
+  },
+  {
+    "id": "P10",
+    "note": "Inverter cleaning will reduce PV generation by 70% between 9 AM and 11 AM",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "solar_reduction",
+      "hours": [9, 10],
+      "factor": 0.3
+    }
+  },
+  {
+    "id": "P11",
+    "note": "Keep at least 50% of battery capacity in reserve from 6 PM until 9 PM",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "minimum_battery_reserve",
+      "hours": [18, 19, 20],
+      "minimum_energy_kwh": 100.0
+    }
+  },
+  {
+    "id": "P12",
+    "note": "Hold 80 kWh reserve in the battery between 18:00 and 22:00",
+    "battery_capacity_kwh": 250.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "minimum_battery_reserve",
+      "hours": [18, 19, 20, 21],
+      "minimum_energy_kwh": 80.0
+    }
+  },
+  {
+    "id": "P13",
+    "note": "Ensure battery remains above 60 kWh from 17:00 to 20:00 for evening readiness",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "minimum_battery_reserve",
+      "hours": [17, 18, 19],
+      "minimum_energy_kwh": 60.0
+    }
+  },
+  {
+    "id": "P14",
+    "note": "Maintain a 40% battery state-of-charge reserve between 19:00 and 23:00",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "minimum_battery_reserve",
+      "hours": [19, 20, 21, 22],
+      "minimum_energy_kwh": 80.0
+    }
+  },
+  {
+    "id": "P15",
+    "note": "Battery storage must retain at least 120 kWh from 6 PM till 10 PM",
+    "battery_capacity_kwh": 300.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "minimum_battery_reserve",
+      "hours": [18, 19, 20, 21],
+      "minimum_energy_kwh": 120.0
+    }
+  },
+  {
+    "id": "P16",
+    "note": "Hold at least 30% battery reserve from 20:00 to 23:00 for backup power",
+    "battery_capacity_kwh": 150.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "minimum_battery_reserve",
+      "hours": [20, 21, 22],
+      "minimum_energy_kwh": 45.0
+    }
+  },
+  {
+    "id": "P17",
+    "note": "Inverter relay testing: charger isolated from 10:00 to 14:00",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "no_charge_window",
+      "hours": [10, 11, 12, 13]
+    }
+  },
+  {
+    "id": "P18",
+    "note": "Do not charge the battery between 11:00 and 15:00 due to transformer inspection",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "no_charge_window",
+      "hours": [11, 12, 13, 14]
+    }
+  },
+  {
+    "id": "P19",
+    "note": "Battery charging is prohibited from 8 AM to 11 AM",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "no_charge_window",
+      "hours": [8, 9, 10]
+    }
+  },
+  {
+    "id": "P20",
+    "note": "Night grid maintenance: no charging allowed from 10 PM to 2 AM",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "no_charge_window",
+      "hours": [0, 1, 22, 23]
+    }
+  },
+  {
+    "id": "P21",
+    "note": "Relay testing – no discharging from 5 PM till 8 PM",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "no_discharge_window",
+      "hours": [17, 18, 19]
+    }
+  },
+  {
+    "id": "P22",
+    "note": "Prevent battery discharging between 18:00 and 21:00 during circuit calibration",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "no_discharge_window",
+      "hours": [18, 19, 20]
+    }
+  },
+  {
+    "id": "P23",
+    "note": "No discharging allowed from 2 PM to 5 PM",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "no_discharge_window",
+      "hours": [14, 15, 16]
+    }
+  },
+  {
+    "id": "P24",
+    "note": "Discharging disabled from 19:00 to 22:00 for thermal cooldown",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "no_discharge_window",
+      "hours": [19, 20, 21]
+    }
+  },
+  {
+    "id": "P25",
+    "note": "Substation transformer work: grid import must not exceed 60 kWh between 12:00 and 16:00",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "max_grid_window",
+      "hours": [12, 13, 14, 15],
+      "max_grid_kwh": 60.0
+    }
+  },
+  {
+    "id": "P26",
+    "note": "Feeder limitation: grid intake must remain at or below 80 kWh from 17:00 to 21:00",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "max_grid_window",
+      "hours": [17, 18, 19, 20],
+      "max_grid_kwh": 80.0
+    }
+  },
+  {
+    "id": "P27",
+    "note": "Cap grid electricity purchase to 50 kWh between 13:00 and 17:00",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "max_grid_window",
+      "hours": [13, 14, 15, 16],
+      "max_grid_kwh": 50.0
+    }
+  },
+  {
+    "id": "P28",
+    "note": "Grid import limit of 75 kWh in effect from 18:00 to 22:00",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "max_grid_window",
+      "hours": [18, 19, 20, 21],
+      "max_grid_kwh": 75.0
+    }
+  },
+  {
+    "id": "P29",
+    "note": "Campus cafeteria serves biryani on Thursday.",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": false,
+      "directive_type": "no_op"
+    }
+  },
+  {
+    "id": "P30",
+    "note": "CSE Fest registration deadline extended to midnight.",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": false,
+      "directive_type": "no_op"
+    }
+  },
+  {
+    "id": "P31",
+    "note": "Robotics lab seminar at 3 PM in Auditorium 2",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": false,
+      "directive_type": "no_op"
+    }
+  },
+  {
+    "id": "P32",
+    "note": "Faculty meeting scheduled at 10 AM in Conference Room B",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": false,
+      "directive_type": "no_op"
+    }
+  },
+  {
+    "id": "P33",
+    "note": "Campus water supply maintenance will occur tomorrow morning",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": false,
+      "directive_type": "no_op"
+    }
+  },
+  {
+    "id": "P34",
+    "note": "Solar output drops to 40% between 12:00 and 14:00",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "solar_reduction",
+      "hours": [12, 13],
+      "factor": 0.4
+    }
+  },
+  {
+    "id": "P35",
+    "note": "A 60% reduction in rooftop solar from 1 PM to 3 PM",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "solar_reduction",
+      "hours": [13, 14],
+      "factor": 0.4
+    }
+  },
+  {
+    "id": "P36",
+    "note": "Reserve 100 kWh in battery between 19:00 and 22:00",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "minimum_battery_reserve",
+      "hours": [19, 20, 21],
+      "minimum_energy_kwh": 100.0
+    }
+  },
+  {
+    "id": "P37",
+    "note": "No charging permitted between 13:00 and 16:00",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "no_charge_window",
+      "hours": [13, 14, 15]
+    }
+  },
+  {
+    "id": "P38",
+    "note": "Prevent battery discharge from 6 PM to 8 PM",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "no_discharge_window",
+      "hours": [18, 19]
+    }
+  },
+  {
+    "id": "P39",
+    "note": "Grid import capped at 90 kWh from 11:00 to 15:00",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": true,
+      "directive_type": "max_grid_window",
+      "hours": [11, 12, 13, 14],
+      "max_grid_kwh": 90.0
+    }
+  },
+  {
+    "id": "P40",
+    "note": "Library air conditioning filter replacement completed.",
+    "battery_capacity_kwh": 200.0,
+    "expected_directive": {
+      "applies": false,
+      "directive_type": "no_op"
+    }
+  }
+]

@@ -1,0 +1,17 @@
+.git
+.gitignore
+.env
+.env.example
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+node_modules
+dist
+venv
+.venv
+/opt/venv
+tests
+.pytest_cache
+docs/*.pdf

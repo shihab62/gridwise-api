@@ -1,0 +1,6 @@
+{
+  "name": "GridWise LLM",
+  "description": "Energy management and schedule optimization API with LLM operator-note interpretation and HiGHS LP solver for smart campus microgrids.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
